@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking Form</title>
+    <link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Loan Application
+        </h1>
+        <div class="loanForm">
+        <form action=" ">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">First Name</label>
+                <input type="text" placeholder="First Name" name ="first">
+            <label for="middlename">Middle Name</label>
+                <input type="text" placeholder="Middle Name" name ="middle">
+            <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Last Name" name ="last">
+        <p>
+            <label for="homeaddress">Home Address</label>
+                <input type="text" placeholder="123 Spring St" name="homeaddress">
+            <label for="city">City</label>
+                <input type="text" placeholder="Alberta" name="city">
+            <label for="state">State</label>
+                <input type="text" placeholder="Alberta" name="city">
+        </p>
+        <p>
+            <label for="occupation">Occupation</label>
+                <input type="text" placeholder="List Your Occupation" name="occupation">
+            <label for="employer">Employer</label>
+                <input type="text" placeholder="Employer" name="employer">
+        </p>        
+
+        </fieldset>
+        <fieldset>
+            <legend>Loan Type</legend>
+            <label for="loantype">Type of Loan</label>
+            <p>
+                <input type=radio name="loantype">Commercial
+                <input type=radio name="loantype">Real Estate
+                <input type=radio name="loantype">Personal
+                <input type=radio name="loantype">Mortgage
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Loan Terms</legend>
+            <label for="loanamount">Loan Amount</label>
+            <p>
+                <input type=radio name="term">5 Years
+                <input type=radio name="term">15 Years
+                <input type=radio name="term">30 Years
+            </p>    
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <div>
+                <input type="checkbox" name="condition">Downpayment
+                <input type="checkbox" name="condition">Reside Out of State
+                <input type="checkbox" name="condition">Married
+                <input type="checkbox" name="condition">Co-Signer
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Comments</legend>
+                <label for="comments">Comments</label>
+                <input type="text" name="comments" size="70" style="height:90px; width:700px">
+        </fieldset>
+        <fieldset>
+            <legend>Other Contact Information</legend>
+            <label for="email">Email</label>
+                <input type="email" placeholder="email address" size="70" name="email">
+            <div>
+                <label for="tel">Phone Number</label>
+                <input type="tel" placeholder="555-555-5555" name="tel">
+            </div>
+            <div>
+                <label for="linkedinprofile">LinkedIn Profile URL</label>
+                <input type="url" size="70" name="linkedinprofile">
+            </div>
+        </fieldset>
+        </form>
+        <button type="submit">Submit Application</button>
+</body>
+</html>
